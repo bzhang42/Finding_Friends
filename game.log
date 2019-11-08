@@ -1,0 +1,426 @@
+2019-11-07 18:21:26,349 - INFO - GAME - 5 currently playing.
+2019-11-07 18:21:26,350 - INFO - GAME - Players: [<class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>]
+2019-11-07 18:21:27,276 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,327 - INFO - GAME - Game results:
+2019-11-07 18:21:27,327 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 97
+2019-11-07 18:21:27,327 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 100
+2019-11-07 18:21:27,327 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 85
+2019-11-07 18:21:27,328 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 93
+2019-11-07 18:21:27,328 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 91
+2019-11-07 18:21:27,328 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,366 - INFO - GAME - Game results:
+2019-11-07 18:21:27,366 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 90
+2019-11-07 18:21:27,366 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 83
+2019-11-07 18:21:27,366 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 96
+2019-11-07 18:21:27,366 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 100
+2019-11-07 18:21:27,366 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 95
+2019-11-07 18:21:27,366 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,404 - INFO - GAME - Game results:
+2019-11-07 18:21:27,404 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 100
+2019-11-07 18:21:27,405 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 94
+2019-11-07 18:21:27,405 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 94
+2019-11-07 18:21:27,405 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 97
+2019-11-07 18:21:27,405 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 89
+2019-11-07 18:21:27,405 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,437 - INFO - GAME - Game results:
+2019-11-07 18:21:27,437 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 100
+2019-11-07 18:21:27,437 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 89
+2019-11-07 18:21:27,437 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 80
+2019-11-07 18:21:27,437 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 83
+2019-11-07 18:21:27,437 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 80
+2019-11-07 18:21:27,437 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,472 - INFO - GAME - Game results:
+2019-11-07 18:21:27,472 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 87
+2019-11-07 18:21:27,472 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 100
+2019-11-07 18:21:27,472 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 98
+2019-11-07 18:21:27,472 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 89
+2019-11-07 18:21:27,472 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 96
+2019-11-07 18:21:27,472 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,509 - INFO - GAME - Game results:
+2019-11-07 18:21:27,509 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 90
+2019-11-07 18:21:27,510 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 85
+2019-11-07 18:21:27,510 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 100
+2019-11-07 18:21:27,510 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 87
+2019-11-07 18:21:27,510 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 88
+2019-11-07 18:21:27,510 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,544 - INFO - GAME - Game results:
+2019-11-07 18:21:27,544 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 99
+2019-11-07 18:21:27,544 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 96
+2019-11-07 18:21:27,544 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 93
+2019-11-07 18:21:27,544 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 90
+2019-11-07 18:21:27,544 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,544 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,579 - INFO - GAME - Game results:
+2019-11-07 18:21:27,579 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 96
+2019-11-07 18:21:27,579 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 85
+2019-11-07 18:21:27,579 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 84
+2019-11-07 18:21:27,579 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 89
+2019-11-07 18:21:27,579 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,579 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,613 - INFO - GAME - Game results:
+2019-11-07 18:21:27,613 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 89
+2019-11-07 18:21:27,613 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 95
+2019-11-07 18:21:27,613 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 78
+2019-11-07 18:21:27,613 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 82
+2019-11-07 18:21:27,613 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,613 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,648 - INFO - GAME - Game results:
+2019-11-07 18:21:27,648 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 100
+2019-11-07 18:21:27,648 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 90
+2019-11-07 18:21:27,648 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 89
+2019-11-07 18:21:27,648 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 87
+2019-11-07 18:21:27,648 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 74
+2019-11-07 18:21:27,648 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,681 - INFO - GAME - Game results:
+2019-11-07 18:21:27,682 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 88
+2019-11-07 18:21:27,682 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 100
+2019-11-07 18:21:27,682 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 77
+2019-11-07 18:21:27,682 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 90
+2019-11-07 18:21:27,682 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 83
+2019-11-07 18:21:27,682 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,713 - INFO - GAME - Game results:
+2019-11-07 18:21:27,713 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 95
+2019-11-07 18:21:27,713 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 93
+2019-11-07 18:21:27,713 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 89
+2019-11-07 18:21:27,713 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 87
+2019-11-07 18:21:27,713 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,714 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,749 - INFO - GAME - Game results:
+2019-11-07 18:21:27,749 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 92
+2019-11-07 18:21:27,749 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 100
+2019-11-07 18:21:27,749 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 86
+2019-11-07 18:21:27,749 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 99
+2019-11-07 18:21:27,749 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 89
+2019-11-07 18:21:27,749 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,786 - INFO - GAME - Game results:
+2019-11-07 18:21:27,786 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 96
+2019-11-07 18:21:27,786 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 98
+2019-11-07 18:21:27,786 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 100
+2019-11-07 18:21:27,786 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 98
+2019-11-07 18:21:27,786 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 98
+2019-11-07 18:21:27,786 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,817 - INFO - GAME - Game results:
+2019-11-07 18:21:27,817 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 86
+2019-11-07 18:21:27,817 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 85
+2019-11-07 18:21:27,817 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 100
+2019-11-07 18:21:27,817 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 74
+2019-11-07 18:21:27,817 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 83
+2019-11-07 18:21:27,817 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,845 - INFO - GAME - Game results:
+2019-11-07 18:21:27,845 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 83
+2019-11-07 18:21:27,845 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 76
+2019-11-07 18:21:27,845 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 71
+2019-11-07 18:21:27,845 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 74
+2019-11-07 18:21:27,846 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,846 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,875 - INFO - GAME - Game results:
+2019-11-07 18:21:27,876 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 83
+2019-11-07 18:21:27,876 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 88
+2019-11-07 18:21:27,876 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 81
+2019-11-07 18:21:27,876 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 88
+2019-11-07 18:21:27,876 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:27,876 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,913 - INFO - GAME - Game results:
+2019-11-07 18:21:27,913 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 98
+2019-11-07 18:21:27,913 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 86
+2019-11-07 18:21:27,913 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 91
+2019-11-07 18:21:27,913 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 100
+2019-11-07 18:21:27,913 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 91
+2019-11-07 18:21:27,913 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,942 - INFO - GAME - Game results:
+2019-11-07 18:21:27,942 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 73
+2019-11-07 18:21:27,942 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 100
+2019-11-07 18:21:27,942 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 81
+2019-11-07 18:21:27,942 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 75
+2019-11-07 18:21:27,942 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 75
+2019-11-07 18:21:27,942 - INFO - GAME - Game starting!
+2019-11-07 18:21:27,976 - INFO - GAME - Game results:
+2019-11-07 18:21:27,976 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E43350E470>, Level 89
+2019-11-07 18:21:27,976 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E43350E358>, Level 82
+2019-11-07 18:21:27,976 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E43350E048>, Level 82
+2019-11-07 18:21:27,976 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E43350E208>, Level 93
+2019-11-07 18:21:27,976 - INFO - GAME - Player 4: <agents.Basic_Agent object at 0x000002E435661240>, Level 100
+2019-11-07 18:21:52,933 - INFO - GAME - 5 currently playing.
+2019-11-07 18:21:52,933 - INFO - GAME - Players: [<class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Lowest_Level_Agent'>]
+2019-11-07 18:21:54,120 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,163 - INFO - GAME - Game results:
+2019-11-07 18:21:54,163 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 96
+2019-11-07 18:21:54,163 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 93
+2019-11-07 18:21:54,163 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 94
+2019-11-07 18:21:54,163 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 93
+2019-11-07 18:21:54,163 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,163 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,216 - INFO - GAME - Game results:
+2019-11-07 18:21:54,217 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 91
+2019-11-07 18:21:54,217 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 90
+2019-11-07 18:21:54,217 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 90
+2019-11-07 18:21:54,217 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 93
+2019-11-07 18:21:54,217 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,217 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,249 - INFO - GAME - Game results:
+2019-11-07 18:21:54,249 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 94
+2019-11-07 18:21:54,249 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 98
+2019-11-07 18:21:54,249 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 100
+2019-11-07 18:21:54,249 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 92
+2019-11-07 18:21:54,249 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 84
+2019-11-07 18:21:54,249 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,284 - INFO - GAME - Game results:
+2019-11-07 18:21:54,284 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 99
+2019-11-07 18:21:54,284 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 100
+2019-11-07 18:21:54,284 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 100
+2019-11-07 18:21:54,284 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 97
+2019-11-07 18:21:54,285 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 96
+2019-11-07 18:21:54,285 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,313 - INFO - GAME - Game results:
+2019-11-07 18:21:54,313 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,313 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 94
+2019-11-07 18:21:54,313 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 92
+2019-11-07 18:21:54,313 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 92
+2019-11-07 18:21:54,313 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 96
+2019-11-07 18:21:54,314 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,344 - INFO - GAME - Game results:
+2019-11-07 18:21:54,344 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 94
+2019-11-07 18:21:54,344 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 94
+2019-11-07 18:21:54,344 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 95
+2019-11-07 18:21:54,344 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 95
+2019-11-07 18:21:54,344 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,344 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,374 - INFO - GAME - Game results:
+2019-11-07 18:21:54,374 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 97
+2019-11-07 18:21:54,374 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 100
+2019-11-07 18:21:54,374 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 96
+2019-11-07 18:21:54,374 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 97
+2019-11-07 18:21:54,374 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 84
+2019-11-07 18:21:54,374 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,406 - INFO - GAME - Game results:
+2019-11-07 18:21:54,406 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 97
+2019-11-07 18:21:54,406 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 98
+2019-11-07 18:21:54,406 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 100
+2019-11-07 18:21:54,406 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 96
+2019-11-07 18:21:54,406 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 83
+2019-11-07 18:21:54,406 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,436 - INFO - GAME - Game results:
+2019-11-07 18:21:54,436 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 80
+2019-11-07 18:21:54,436 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 82
+2019-11-07 18:21:54,436 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 89
+2019-11-07 18:21:54,436 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 79
+2019-11-07 18:21:54,436 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,436 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,467 - INFO - GAME - Game results:
+2019-11-07 18:21:54,468 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,468 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 96
+2019-11-07 18:21:54,468 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 95
+2019-11-07 18:21:54,468 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 94
+2019-11-07 18:21:54,468 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 89
+2019-11-07 18:21:54,468 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,499 - INFO - GAME - Game results:
+2019-11-07 18:21:54,499 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 99
+2019-11-07 18:21:54,499 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 95
+2019-11-07 18:21:54,499 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 100
+2019-11-07 18:21:54,499 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 98
+2019-11-07 18:21:54,499 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 74
+2019-11-07 18:21:54,499 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,528 - INFO - GAME - Game results:
+2019-11-07 18:21:54,529 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,529 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 98
+2019-11-07 18:21:54,529 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 100
+2019-11-07 18:21:54,529 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 97
+2019-11-07 18:21:54,529 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 93
+2019-11-07 18:21:54,529 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,557 - INFO - GAME - Game results:
+2019-11-07 18:21:54,557 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 83
+2019-11-07 18:21:54,557 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 83
+2019-11-07 18:21:54,557 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 85
+2019-11-07 18:21:54,557 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 81
+2019-11-07 18:21:54,557 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,557 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,589 - INFO - GAME - Game results:
+2019-11-07 18:21:54,589 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 95
+2019-11-07 18:21:54,589 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 95
+2019-11-07 18:21:54,589 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 95
+2019-11-07 18:21:54,589 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 97
+2019-11-07 18:21:54,589 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,589 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,618 - INFO - GAME - Game results:
+2019-11-07 18:21:54,618 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 85
+2019-11-07 18:21:54,618 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 85
+2019-11-07 18:21:54,618 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 85
+2019-11-07 18:21:54,619 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 87
+2019-11-07 18:21:54,619 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,619 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,654 - INFO - GAME - Game results:
+2019-11-07 18:21:54,654 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,654 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 99
+2019-11-07 18:21:54,654 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 99
+2019-11-07 18:21:54,654 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 99
+2019-11-07 18:21:54,654 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 93
+2019-11-07 18:21:54,654 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,689 - INFO - GAME - Game results:
+2019-11-07 18:21:54,689 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 99
+2019-11-07 18:21:54,689 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 99
+2019-11-07 18:21:54,689 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 98
+2019-11-07 18:21:54,689 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 100
+2019-11-07 18:21:54,689 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 100
+2019-11-07 18:21:54,690 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,719 - INFO - GAME - Game results:
+2019-11-07 18:21:54,719 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,719 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 99
+2019-11-07 18:21:54,719 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 97
+2019-11-07 18:21:54,719 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 94
+2019-11-07 18:21:54,719 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 92
+2019-11-07 18:21:54,719 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,751 - INFO - GAME - Game results:
+2019-11-07 18:21:54,751 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 100
+2019-11-07 18:21:54,751 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 97
+2019-11-07 18:21:54,751 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 98
+2019-11-07 18:21:54,751 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 98
+2019-11-07 18:21:54,751 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 85
+2019-11-07 18:21:54,751 - INFO - GAME - Game starting!
+2019-11-07 18:21:54,787 - INFO - GAME - Game results:
+2019-11-07 18:21:54,787 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E434870BE0>, Level 97
+2019-11-07 18:21:54,787 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E434870EB8>, Level 100
+2019-11-07 18:21:54,787 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E434870DA0>, Level 97
+2019-11-07 18:21:54,787 - INFO - GAME - Player 3: <agents.Basic_Agent object at 0x000002E434870A90>, Level 95
+2019-11-07 18:21:54,787 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E434870E80>, Level 95
+2019-11-07 18:22:01,245 - INFO - GAME - 5 currently playing.
+2019-11-07 18:22:01,245 - INFO - GAME - Players: [<class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Basic_Agent'>, <class 'agents.Lowest_Level_Agent'>, <class 'agents.Lowest_Level_Agent'>]
+2019-11-07 18:22:01,576 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,610 - INFO - GAME - Game results:
+2019-11-07 18:22:01,611 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,611 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,611 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 99
+2019-11-07 18:22:01,611 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,611 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 99
+2019-11-07 18:22:01,611 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,637 - INFO - GAME - Game results:
+2019-11-07 18:22:01,637 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 100
+2019-11-07 18:22:01,637 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 100
+2019-11-07 18:22:01,637 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 99
+2019-11-07 18:22:01,637 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 99
+2019-11-07 18:22:01,637 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 98
+2019-11-07 18:22:01,637 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,665 - INFO - GAME - Game results:
+2019-11-07 18:22:01,665 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 94
+2019-11-07 18:22:01,665 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 94
+2019-11-07 18:22:01,665 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 94
+2019-11-07 18:22:01,666 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,666 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 94
+2019-11-07 18:22:01,666 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,689 - INFO - GAME - Game results:
+2019-11-07 18:22:01,690 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 98
+2019-11-07 18:22:01,690 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 98
+2019-11-07 18:22:01,690 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 98
+2019-11-07 18:22:01,690 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,690 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,690 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,715 - INFO - GAME - Game results:
+2019-11-07 18:22:01,715 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,715 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 98
+2019-11-07 18:22:01,715 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 100
+2019-11-07 18:22:01,715 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,715 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 99
+2019-11-07 18:22:01,715 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,739 - INFO - GAME - Game results:
+2019-11-07 18:22:01,739 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,739 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 98
+2019-11-07 18:22:01,739 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 99
+2019-11-07 18:22:01,739 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,739 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,739 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,762 - INFO - GAME - Game results:
+2019-11-07 18:22:01,762 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,762 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,763 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 99
+2019-11-07 18:22:01,763 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,763 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 99
+2019-11-07 18:22:01,763 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,787 - INFO - GAME - Game results:
+2019-11-07 18:22:01,787 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 98
+2019-11-07 18:22:01,787 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 97
+2019-11-07 18:22:01,787 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 96
+2019-11-07 18:22:01,787 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 95
+2019-11-07 18:22:01,788 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,788 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,811 - INFO - GAME - Game results:
+2019-11-07 18:22:01,811 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 96
+2019-11-07 18:22:01,811 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 95
+2019-11-07 18:22:01,811 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 100
+2019-11-07 18:22:01,811 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 94
+2019-11-07 18:22:01,811 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 95
+2019-11-07 18:22:01,811 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,836 - INFO - GAME - Game results:
+2019-11-07 18:22:01,837 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 97
+2019-11-07 18:22:01,837 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 97
+2019-11-07 18:22:01,837 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 96
+2019-11-07 18:22:01,837 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 96
+2019-11-07 18:22:01,837 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,837 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,862 - INFO - GAME - Game results:
+2019-11-07 18:22:01,862 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 100
+2019-11-07 18:22:01,862 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,862 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 98
+2019-11-07 18:22:01,862 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,862 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 99
+2019-11-07 18:22:01,862 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,885 - INFO - GAME - Game results:
+2019-11-07 18:22:01,886 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,886 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,886 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 98
+2019-11-07 18:22:01,886 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,886 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 98
+2019-11-07 18:22:01,886 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,910 - INFO - GAME - Game results:
+2019-11-07 18:22:01,910 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 92
+2019-11-07 18:22:01,910 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 93
+2019-11-07 18:22:01,910 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 94
+2019-11-07 18:22:01,910 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,910 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 91
+2019-11-07 18:22:01,910 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,933 - INFO - GAME - Game results:
+2019-11-07 18:22:01,933 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,933 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,933 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 98
+2019-11-07 18:22:01,933 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,933 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,933 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,961 - INFO - GAME - Game results:
+2019-11-07 18:22:01,961 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,961 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 98
+2019-11-07 18:22:01,961 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 99
+2019-11-07 18:22:01,961 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:01,961 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 98
+2019-11-07 18:22:01,961 - INFO - GAME - Game starting!
+2019-11-07 18:22:01,986 - INFO - GAME - Game results:
+2019-11-07 18:22:01,986 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 99
+2019-11-07 18:22:01,986 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:01,986 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 98
+2019-11-07 18:22:01,986 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 98
+2019-11-07 18:22:01,986 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:01,986 - INFO - GAME - Game starting!
+2019-11-07 18:22:02,010 - INFO - GAME - Game results:
+2019-11-07 18:22:02,010 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 97
+2019-11-07 18:22:02,010 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 99
+2019-11-07 18:22:02,010 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 96
+2019-11-07 18:22:02,010 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:02,010 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 96
+2019-11-07 18:22:02,010 - INFO - GAME - Game starting!
+2019-11-07 18:22:02,039 - INFO - GAME - Game results:
+2019-11-07 18:22:02,039 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 98
+2019-11-07 18:22:02,039 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 98
+2019-11-07 18:22:02,039 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 97
+2019-11-07 18:22:02,040 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 100
+2019-11-07 18:22:02,040 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 97
+2019-11-07 18:22:02,040 - INFO - GAME - Game starting!
+2019-11-07 18:22:02,065 - INFO - GAME - Game results:
+2019-11-07 18:22:02,065 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 93
+2019-11-07 18:22:02,065 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 92
+2019-11-07 18:22:02,065 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 95
+2019-11-07 18:22:02,065 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 90
+2019-11-07 18:22:02,065 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
+2019-11-07 18:22:02,065 - INFO - GAME - Game starting!
+2019-11-07 18:22:02,100 - INFO - GAME - Game results:
+2019-11-07 18:22:02,100 - INFO - GAME - Player 0: <agents.Basic_Agent object at 0x000002E435648B00>, Level 96
+2019-11-07 18:22:02,100 - INFO - GAME - Player 1: <agents.Basic_Agent object at 0x000002E4356480F0>, Level 95
+2019-11-07 18:22:02,100 - INFO - GAME - Player 2: <agents.Basic_Agent object at 0x000002E435648908>, Level 96
+2019-11-07 18:22:02,100 - INFO - GAME - Player 3: <agents.Lowest_Level_Agent object at 0x000002E435648E48>, Level 95
+2019-11-07 18:22:02,100 - INFO - GAME - Player 4: <agents.Lowest_Level_Agent object at 0x000002E435648C88>, Level 100
