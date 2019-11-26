@@ -99,3 +99,35 @@ class Lowest_Level_Agent(Agent):
 
     def accept_reward(self, reward, done):
         pass
+
+
+class Skilled_Agent(Agent):
+    def pick_friends(self, levels, cap, skill_levels=None):
+        assert(skill_levels.all() != None)
+        
+        
+        # Method 1 - pick most skilled agent that is not currently ahead in levels, else pick least levelled
+        candidates_levels = list(zip([i for i in range(len(levels))], levels))
+        self_level = candidates_levels.pop(self.id)[1]
+        #print("current level"+str(self_level))
+        candidates_levels = sorted(candidates_levels, key = lambda t:t[1])
+
+        candidates_skills = list(zip([j for j in range(len(skill_levels))], skill_levels))
+        self_skill = candidates_skills.pop(self.id)[1]
+        candidates_skills = sorted(candidates_skills, key = lambda t:t[1])
+        
+        
+        for i in range(len(skill_levels)-1):
+            check = candidates_skills[len(skill_levels)-2-i][0]
+            #print("check " + str(i)+ " other guy " + str(check)+ " skill = " +str(skill_levels[check])+" level = " + str(levels[check]))
+            # possible idea: 
+            k = (skill_levels[check] - self_skill)*10
+            #k = 10
+            if levels[check]+k <= self_level:
+                return check
+            
+        return candidates_levels[0][0]
+    
+    def accept_reward(self, reward, done):
+        pass
+
