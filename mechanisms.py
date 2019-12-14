@@ -89,6 +89,7 @@ class Baseline_Mechanism(Mechanism):
     def play(self, player, levels, cap):
         # Let the player who is king pick the friend
         friend = player.pick_friends(levels, cap)
+        assert(friend != player.id)
 
         # Sample and increase levels
         if np.random.random() < self.p:
@@ -110,7 +111,7 @@ class Baseline_Mechanism(Mechanism):
 
     def output_dim(self):
         # The only dimensions required are probabilities of selecting each player as the friend
-        return self.num_players
+        return self.num_players - 1
 
 class Skill_Mechanism(Mechanism):
     def __init__(self, num_players, skill_levels):
@@ -155,4 +156,4 @@ class Skill_Mechanism(Mechanism):
 
     def output_dim(self):
         # Output is still the probability of including each player in the kingship
-        return self.num_players
+        return self.num_players - 1

@@ -1,9 +1,9 @@
 import logging
 import numpy as np
 
-# Going up in level results in 1 point reward
-LOSE_REWARD = -10
-WIN_REWARD = 10
+# Winning or losing results in 10 point reward
+LOSE_REWARD = -1.0
+WIN_REWARD = 1.0
 
 class Game(object):
     def __init__(self, players, mechanism, cap, logging_level='DEBUG'):
@@ -81,12 +81,13 @@ class Game(object):
             # If game is over, assign win and lose rewards to each agent
             for p in self.players:
                 if new_levels[p.id] >= self.cap:
-                    p.accept_reward(WIN_REWARD, done=True)
+                    p.accept_reward(float(WIN_REWARD), done=True)
                 else:
-                    p.accept_reward(LOSE_REWARD, done=True)
+                    p.accept_reward(float(LOSE_REWARD), done=True)
         else:
-            # If game is not over, assign reward for gaining levels to the player who just played
-            player.accept_reward(new_levels[player.id] - old_levels[player.id], done=False)
+            # If game is not over, assign zero reward and continue
+            # player.accept_reward(float(new_levels[player.id] - old_levels[player.id]), done=False)
+            player.accept_reward(0., done=False)
 
 
     def play(self):

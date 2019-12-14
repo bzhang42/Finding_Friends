@@ -95,7 +95,15 @@ class Lowest_Level_Agent(Agent):
 
         candidates = sorted(candidates, key=lambda t: t[1])
 
-        return candidates[0][0]
+        lowest = []
+        i = 0
+        while candidates[i][1] == candidates[i-1][1] or i == 0:
+            lowest.append(candidates[i][0])
+            i += 1
+            if i == len(candidates):
+                break
+
+        return np.random.choice(lowest, size=1)[0]
 
     def accept_reward(self, reward, done):
         pass
