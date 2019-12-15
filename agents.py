@@ -63,6 +63,29 @@ class Agent(object):
         pass
 
     @abstractmethod
+    def decide_sabotage(self, king, levels, cap, skill_levels=None):
+        '''
+        The player decides whether to sabotage their team
+
+        Parameters
+        ----------
+        king : int
+            The index of the king who has chosen them as a friend
+        levels : list(int)
+            The levels of all players
+        cap : int
+            The max level cap
+        skill_levels : list(int)
+            The skill levels of all players (optional)
+
+        Returns
+        -------
+        A boolean for whether to sabotage
+
+        '''
+        pass
+
+    @abstractmethod
     def accept_reward(self, reward, done):
         '''
         Accept the reward assigned by the game
@@ -87,6 +110,9 @@ class Basic_Agent(Agent):
     def accept_reward(self, reward, done):
         pass
 
+    def decide_sabotage(self, king, levels, cap, skill_levels=None):
+        return False
+
 class Lowest_Level_Agent(Agent):
     def pick_friends(self, levels, cap, skill_levels=None):
         # Pick the agent besides itself that has the lowest level
@@ -107,6 +133,9 @@ class Lowest_Level_Agent(Agent):
 
     def accept_reward(self, reward, done):
         pass
+
+    def decide_sabotage(self, king, levels, cap, skill_levels=None):
+        return False
 
 
 class Skilled_Agent(Agent):
@@ -139,3 +168,5 @@ class Skilled_Agent(Agent):
     def accept_reward(self, reward, done):
         pass
 
+    def decide_sabotage(self, king, levels, cap, skill_levels=None):
+        return False

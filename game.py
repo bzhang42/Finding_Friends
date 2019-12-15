@@ -3,7 +3,7 @@ import numpy as np
 
 # Winning or losing results in 10 point reward
 LOSE_REWARD = -1.0
-WIN_REWARD = 1.0
+WIN_REWARD = 5.0
 
 class Game(object):
     def __init__(self, players, mechanism, cap, logging_level='DEBUG'):
@@ -33,7 +33,7 @@ class Game(object):
         logging.info(f'{self.num_players} currently playing.')
         logging.info(f'Players: {[str(player) for player in players]}')
 
-        if self.num_players < 4:
+        if self.num_players < 3:
             logging.critical("Not enough players.")
             print("Not enough players.")
             return
@@ -101,7 +101,7 @@ class Game(object):
             logging.debug(f'Round {round}: Current Levels {self.levels}, Current King {self.king}')
 
             # The mechanism is used to determine the new levels of all players
-            new_levels = self.mechanism.play(self.players[self.king], self.levels, self.cap)
+            new_levels = self.mechanism.play(self.king , self.players, self.levels, self.cap)
 
             # The rewards are distributed based on these new levels
             self.reward(self.players[self.king], self.levels, new_levels)

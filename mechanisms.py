@@ -36,14 +36,16 @@ class Mechanism(object):
         return levels[n:] + levels[:n]
 
     @abstractmethod
-    def play(self, player, levels, cap):
+    def play(self, king, players, levels, cap):
         '''
         The main part of the mechanism which determines underlying logic for increasing levels
 
         Parameters
         ----------
-        player : Agent
-            The player whose turn it is to perform an action
+        king : int
+            The index of the player whose turn it is to perform an action
+        players : list(Agent)
+            The players currently in the game
         levels : list(int)
             The levels of all players currently
         cap : int
@@ -86,7 +88,9 @@ class Baseline_Mechanism(Mechanism):
         super(Baseline_Mechanism, self).__init__(num_players)
         self.p = p
 
-    def play(self, player, levels, cap):
+    def play(self, king, players, levels, cap):
+        player = players[king]
+
         # Let the player who is king pick the friend
         friend = player.pick_friends(levels, cap)
         assert(friend != player.id)
@@ -128,7 +132,9 @@ class Skill_Mechanism(Mechanism):
         super(Skill_Mechanism, self).__init__(num_players)
         self.skill_levels = skill_levels
 
-    def play(self, player, levels, cap):
+    def play(self, king, players, levels, cap):
+        player = players[king]
+
         # Let the player who is king pick the friend, accounting for skill levels now
         friend = player.pick_friends(levels, cap, self.skill_levels)
 
@@ -149,6 +155,60 @@ class Skill_Mechanism(Mechanism):
             levels[friend] += 1
 
         return levels
+
+    def input_dim(self):
+        # Input now has to include the levels and skills of all players, along with max level cap
+        return self.num_players + len(self.skill_levels) + 1
+
+    def output_dim(self):
+        # Output is still the probability of including each player in the kingship
+        return self.num_players - 1
+
+
+class Sabotage_Mechanism(Mechanism):
+    def __init__(self, num_players, skill_levels):
+        '''
+        A mechanism which levels up the players based on their combined skill levels
+
+        Parameters
+        ----------
+        num_players : int
+            The number of players in the game
+        skill_levels : list(int)
+            The relative skill levels of the players
+        '''
+        super(Sabotage_Mechanism, self).__init__(num_players)
+        self.skill_levels = skill_levels
+
+    def play(self, king, players, levels, cap):
+        player = players[king]
+
+        # Let the player who is king pick the friend, accounting for skill levels now
+        friend = player.pick_friends(levels, cap, self.skill_levels)
+
+        sabotage = players[friend].decide_sabotage(king, levels, cap, self.skill_levels)
+
+        # The probability of leveling up is proportional to the sum of the skills of the players in the kingship
+        if sabotage:
+            # If the friend chooses to sabotage, then their skill level isn't contributed
+            p = self.skill_levels[player.id] / (np.sum(self.skill_levels) - self.skill_levels[friend])
+        else:
+            p = (self.skill_levels[player.id] + self.skill_levels[friend]) / np.sum(self.skill_levels)
+
+        if np.random.random() < p:
+            levels[player.id] += 1
+            levels[friend] += 1
+
+        return levels
+
+    # def step(self, levels, king, friend):
+    #     p = (self.skill_levels[king] + self.skill_levels[friend]) / np.sum(self.skill_levels)
+    #
+    #     if np.random.random() < p:
+    #         levels[king] += 1
+    #         levels[friend] += 1
+    #
+    #     return levels
 
     def input_dim(self):
         # Input now has to include the levels and skills of all players, along with max level cap
