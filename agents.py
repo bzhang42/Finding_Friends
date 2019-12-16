@@ -138,35 +138,76 @@ class Lowest_Level_Agent(Agent):
         return False
 
 
-class Skilled_Agent(Agent):
+class Strategic_Skilled_Agent(Agent):
     def pick_friends(self, levels, cap, skill_levels=None):
-        assert(skill_levels.all() != None)
-        
-        
+        assert (skill_levels.all() != None)
+
         # Method 1 - pick most skilled agent that is not currently ahead in levels, else pick least levelled
         candidates_levels = list(zip([i for i in range(len(levels))], levels))
         self_level = candidates_levels.pop(self.id)[1]
-        #print("current level"+str(self_level))
-        candidates_levels = sorted(candidates_levels, key = lambda t:t[1])
+        # print("current level"+str(self_level))
+        candidates_levels = sorted(candidates_levels, key=lambda t: t[1])
 
         candidates_skills = list(zip([j for j in range(len(skill_levels))], skill_levels))
         self_skill = candidates_skills.pop(self.id)[1]
-        candidates_skills = sorted(candidates_skills, key = lambda t:t[1])
-        
-        
-        for i in range(len(skill_levels)-1):
-            check = candidates_skills[len(skill_levels)-2-i][0]
-            #print("check " + str(i)+ " other guy " + str(check)+ " skill = " +str(skill_levels[check])+" level = " + str(levels[check]))
-            # possible idea: 
-            k = (skill_levels[check] - self_skill)*10
-            #k = 10
-            if levels[check]+k <= self_level:
+        candidates_skills = sorted(candidates_skills, key=lambda t: t[1])
+
+        for i in range(len(skill_levels) - 1):
+            check = candidates_skills[len(skill_levels) - 2 - i][0]
+            # print("check " + str(i)+ " other guy " + str(check)+ " skill = " +str(skill_levels[check])+" level = " + str(levels[check]))
+            # possible idea:
+            # k = (skill_levels[check] - self_skill)*10
+            k = 10
+            if levels[check] + k <= self_level:
                 return check
-            
+
         return candidates_levels[0][0]
-    
+
     def accept_reward(self, reward, done):
         pass
 
     def decide_sabotage(self, king, levels, cap, skill_levels=None):
         return False
+
+
+class Beta_Binomial_Agent(Strategic_Skilled_Agent):
+    def __init__(self, id, level, skill, priors=(1, 1)):
+        super(Beta_Binomial_Agent, self).__init__(id, level)
+        self.skill = skill
+        self.trials = {}
+        self.successes = {}
+        self.last_friend = None
+        self.last_friend_level = None
+        self.last_level = level
+        self.priors = priors
+
+    def map_probs(self, num_players):
+        skill_levels_map = np.zeros(num_players)
+        for i in self.trials.keys():
+            prob_map = (self.successes[i] + self.priors[0] - 1) / (self.trials[i] + self.priors[0] + self.priors[1] - 2)
+            skill_levels_map[i] = prob_map - self.skill
+        return skill_levels_map
+
+    def pick_friends(self, levels, cap, skill_levels=None):
+        if self.last_friend is not None and levels[self.last_friend] - self.last_friend_level > 0 and levels[self.id] - self.last_level > 0:
+            self.successes[self.last_friend] += 1
+
+        # Calculate the max a posteriori estimate for each other player
+        skill_levels_map = self.map_probs(len(levels))
+
+        # Use the skilled agent's algorithm for picking friend
+        friend = super(Beta_Binomial_Agent, self).pick_friends(levels, cap, skill_levels=skill_levels_map)
+
+        if friend not in self.trials.keys():
+            self.trials[friend] = 1
+        else:
+            self.trials[friend] += 1
+
+        if friend not in self.successes.keys():
+            self.successes[friend] = 0
+
+        self.last_friend = friend
+        self.last_friend_level = levels[friend]
+        self.last_level = levels[self.id]
+
+        return friend
