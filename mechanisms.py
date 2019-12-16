@@ -89,6 +89,7 @@ class Baseline_Mechanism(Mechanism):
         self.p = p
 
     def play(self, king, players, levels, cap):
+        new_levels = levels.copy()
         player = players[king]
 
         # Let the player who is king pick the friend
@@ -97,17 +98,19 @@ class Baseline_Mechanism(Mechanism):
 
         # Sample and increase levels
         if np.random.random() < self.p:
-            levels[player.id] += 1
-            levels[friend] += 1
+            new_levels[player.id] += 1
+            new_levels[friend] += 1
 
-        return levels
+        return new_levels
 
     def step(self, levels, king, friend):
-        if np.random.random() < self.p:
-            levels[king] += 1
-            levels[friend] += 1
+        new_levels = levels.copy()
 
-        return levels
+        if np.random.random() < self.p:
+            new_levels[king] += 1
+            new_levels[friend] += 1
+
+        return new_levels
 
     def input_dim(self):
         # The only dimensions required are levels of players and cap
@@ -133,6 +136,8 @@ class Skill_Mechanism(Mechanism):
         self.skill_levels = skill_levels
 
     def play(self, king, players, levels, cap):
+        new_levels = levels.copy()
+
         player = players[king]
 
         # Let the player who is king pick the friend, accounting for skill levels now
@@ -142,19 +147,21 @@ class Skill_Mechanism(Mechanism):
         p = (self.skill_levels[player.id] + self.skill_levels[friend]) / np.sum(self.skill_levels)
 
         if np.random.random() < p:
-            levels[player.id] += 1
-            levels[friend] += 1
+            new_levels[player.id] += 1
+            new_levels[friend] += 1
 
-        return levels
+        return new_levels
 
     def step(self, levels, king, friend):
+        new_levels = levels.copy()
+
         p = (self.skill_levels[king] + self.skill_levels[friend]) / np.sum(self.skill_levels)
 
         if np.random.random() < p:
-            levels[king] += 1
-            levels[friend] += 1
+            new_levels[king] += 1
+            new_levels[friend] += 1
 
-        return levels
+        return new_levels
 
     def input_dim(self):
         # Input now has to include the levels and skills of all players, along with max level cap
@@ -181,6 +188,7 @@ class Sabotage_Mechanism(Mechanism):
         self.skill_levels = skill_levels
 
     def play(self, king, players, levels, cap):
+        new_levels = levels.copy()
         player = players[king]
 
         # Let the player who is king pick the friend, accounting for skill levels now
@@ -196,10 +204,10 @@ class Sabotage_Mechanism(Mechanism):
             p = (self.skill_levels[player.id] + self.skill_levels[friend]) / np.sum(self.skill_levels)
 
         if np.random.random() < p:
-            levels[player.id] += 1
-            levels[friend] += 1
+            new_levels[player.id] += 1
+            new_levels[friend] += 1
 
-        return levels
+        return new_levels
 
     # def step(self, levels, king, friend):
     #     p = (self.skill_levels[king] + self.skill_levels[friend]) / np.sum(self.skill_levels)

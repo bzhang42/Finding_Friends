@@ -1,9 +1,6 @@
 import logging
 import numpy as np
 
-# Winning or losing results in 10 point reward
-LOSE_REWARD = -1.0
-WIN_REWARD = 5.0
 
 class Game(object):
     def __init__(self, players, mechanism, cap, reward_type='WINNERTAKEALL', logging_level='DEBUG'):
@@ -51,6 +48,10 @@ class Game(object):
         self.cap = cap
         self.reward_type = reward_type
 
+        # Winning or losing results in 10 point reward
+        self.lose_reward = float(-self.cap)
+        self.win_reward = float(self.cap)
+
     def _is_game_over(self, levels):
         """
         Check if the game should finish
@@ -85,9 +86,9 @@ class Game(object):
             if self.reward_type == "WINNERTAKEALL":
                 for p in self.players:
                     if new_levels[p.id] >= self.cap:
-                        p.accept_reward(float(WIN_REWARD), done=True)
+                        p.accept_reward(float(self.win_reward), done=True)
                     else:
-                        p.accept_reward(float(LOSE_REWARD), done=True)
+                        p.accept_reward(float(self.lose_reward), done=True)
             elif self.reward_type == "PROPORTIONAL":
                 sum_levels = sum(new_levels)
                 for p in self.players:
@@ -102,9 +103,12 @@ class Game(object):
                     p.accept_reward(float(curr_reward), done=True)
 
         else:
-            # If game is not over, assign zero reward and continue
-            # player.accept_reward(float(new_levels[player.id] - old_levels[player.id]), done=False)
-            player.accept_reward(0., done=False)
+            # If game is not over, assign reward and continue
+            # print(float(new_levels[player.id] - old_levels[player.id]))
+            if self.reward_type == "WOT":
+                player.accept_reward(float(new_levels[player.id] - old_levels[player.id]), done=False, levels=new_levels, cap=self.cap)
+            else:
+                player.accept_reward(0., done=False, levels=new_levels, cap=self.cap)
 
 
     def play(self):
@@ -133,29 +137,29 @@ class Game(object):
         for i in range(self.num_players):
             logging.info(f'Player {i}: {self.players[i]}, Level {self.levels[i]}')
 
-    def step(self, friend):
-        if not self._is_game_over(self.levels):
-            done = False
-
-            curr_player = self.king
-            curr_level = self.levels[curr_player]
-
-            self.levels = self.mechanism.step(self.levels, self.king, friend)
-            self.king = (self.king + 1) % self.num_players
-
-            reward = self.levels[curr_player] - curr_level
-
-            if self._is_game_over(self.levels):
-                done = True
-                if self.levels[curr_player] >= self.cap:
-                    reward += WIN_REWARD
-                else:
-                    reward += LOSE_REWARD
-
-            return reward, done
-
-        else:
-            raise Exception('Game already over.')
+    # def step(self, friend):
+    #     if not self._is_game_over(self.levels):
+    #         done = False
+    #
+    #         curr_player = self.king
+    #         curr_level = self.levels[curr_player]
+    #
+    #         self.levels = self.mechanism.step(self.levels, self.king, friend)
+    #         self.king = (self.king + 1) % self.num_players
+    #
+    #         reward = self.levels[curr_player] - curr_level
+    #
+    #         if self._is_game_over(self.levels):
+    #             done = True
+    #             if self.levels[curr_player] >= self.cap:
+    #                 reward += WIN_REWARD
+    #             else:
+    #                 reward += LOSE_REWARD
+    #
+    #         return reward, done
+    #
+    #     else:
+    #         raise Exception('Game already over.')
 
     def reset(self):
         """

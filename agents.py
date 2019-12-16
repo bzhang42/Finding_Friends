@@ -86,7 +86,7 @@ class Agent(object):
         pass
 
     @abstractmethod
-    def accept_reward(self, reward, done):
+    def accept_reward(self, reward, done=False, levels=None, cap=None):
         '''
         Accept the reward assigned by the game
 
@@ -107,7 +107,7 @@ class Basic_Agent(Agent):
         # Randomly pick an agent that is not itself (excluded when sampling)
         return (np.random.randint(1, len(levels)) + self.id) % len(levels)
 
-    def accept_reward(self, reward, done):
+    def accept_reward(self, reward, done=False, levels=None, cap=None):
         pass
 
     def decide_sabotage(self, king, levels, cap, skill_levels=None):
@@ -131,7 +131,7 @@ class Lowest_Level_Agent(Agent):
 
         return np.random.choice(lowest, size=1)[0]
 
-    def accept_reward(self, reward, done):
+    def accept_reward(self, reward, done=False, levels=None, cap=None):
         pass
 
     def decide_sabotage(self, king, levels, cap, skill_levels=None):
@@ -163,7 +163,7 @@ class Strategic_Skilled_Agent(Agent):
 
         return candidates_levels[0][0]
 
-    def accept_reward(self, reward, done):
+    def accept_reward(self, reward, done=False, levels=None, cap=None):
         pass
 
     def decide_sabotage(self, king, levels, cap, skill_levels=None):
