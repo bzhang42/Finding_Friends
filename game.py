@@ -6,7 +6,7 @@ LOSE_REWARD = -1.0
 WIN_REWARD = 5.0
 
 class Game(object):
-    def __init__(self, players, mechanism, cap, logging_level='DEBUG'):
+    def __init__(self, players, mechanism, cap, reward_type='WINNERTAKEALL', logging_level='DEBUG'):
         """
         Given all the configurable settings, including players, mechanism, cap, create the game
 
@@ -18,6 +18,8 @@ class Game(object):
             The mechanism for determining who levels up in each round
         cap : int
             The maximum level that signals end of game
+        reward_type : str
+            Type of reward to give when game ends
         logging_level : str
             How much text to be outputted by the game
         """
@@ -47,8 +49,7 @@ class Game(object):
 
         self.mechanism = mechanism
         self.cap = cap
-
-        self.reward_type = "WINNERTAKEALL"
+        self.reward_type = reward_type
 
     def _is_game_over(self, levels):
         """
