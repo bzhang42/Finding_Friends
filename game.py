@@ -48,6 +48,8 @@ class Game(object):
         self.mechanism = mechanism
         self.cap = cap
 
+        self.reward_type = "WINNERTAKEALL"
+
     def _is_game_over(self, levels):
         """
         Check if the game should finish
@@ -79,11 +81,25 @@ class Game(object):
         """
         if self._is_game_over(new_levels):
             # If game is over, assign win and lose rewards to each agent
-            for p in self.players:
-                if new_levels[p.id] >= self.cap:
-                    p.accept_reward(float(WIN_REWARD), done=True)
-                else:
-                    p.accept_reward(float(LOSE_REWARD), done=True)
+            if self.reward_type == "WINNERTAKEALL":
+                for p in self.players:
+                    if new_levels[p.id] >= self.cap:
+                        p.accept_reward(float(WIN_REWARD), done=True)
+                    else:
+                        p.accept_reward(float(LOSE_REWARD), done=True)
+            elif self.reward_type == "PROPORTIONAL":
+                sum_levels = sum(new_levels)
+                for p in self.players:
+                    p.accept_reward(float(new_levels[p.id]/sum_levels), done=True)
+            elif self.reward_type == "RANKED":
+                # Start with num_players points, lose 1 for every player ranked above
+                for p in self.players:
+                    curr_reward = self.num_players
+                    for q in self.players:
+                        if new_levels[q.id] > new_levels[p.id]:
+                            curr_reward -= 1
+                    p.accept_reward(float(curr_reward), done=True)
+
         else:
             # If game is not over, assign zero reward and continue
             # player.accept_reward(float(new_levels[player.id] - old_levels[player.id]), done=False)
