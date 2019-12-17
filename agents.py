@@ -157,7 +157,7 @@ class Strategic_Skilled_Agent(Agent):
             # print("check " + str(i)+ " other guy " + str(check)+ " skill = " +str(skill_levels[check])+" level = " + str(levels[check]))
             # possible idea:
             # k = (skill_levels[check] - self_skill)*10
-            k = 10
+            k = cap/10
             if levels[check] + k <= self_level:
                 return check
 
