@@ -50,7 +50,7 @@ class Game(object):
 
         # Winning or losing results in 10 point reward
         self.lose_reward = float(-self.cap)
-        self.win_reward = float(self.cap)
+        self.win_reward = 1.0
 
     def _is_game_over(self, levels):
         """
@@ -105,7 +105,7 @@ class Game(object):
         else:
             # If game is not over, assign reward and continue
             # print(float(new_levels[player.id] - old_levels[player.id]))
-            if self.reward_type == "WOT":
+            if self.reward_type == "WINNERTAKEALL":
                 player.accept_reward(float(new_levels[player.id] - old_levels[player.id]), done=False, levels=new_levels, cap=self.cap)
             else:
                 player.accept_reward(0., done=False, levels=new_levels, cap=self.cap)
