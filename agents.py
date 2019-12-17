@@ -157,7 +157,7 @@ class Strategic_Skilled_Agent(Agent):
             # print("check " + str(i)+ " other guy " + str(check)+ " skill = " +str(skill_levels[check])+" level = " + str(levels[check]))
             # possible idea:
             # k = (skill_levels[check] - self_skill)*10
-            k = 10
+            k = cap // 10
             if levels[check] + k <= self_level:
                 return check
 
@@ -184,7 +184,7 @@ class Beta_Binomial_Agent(Strategic_Skilled_Agent):
     def map_probs(self, num_players):
         skill_levels_map = np.zeros(num_players)
         for i in self.trials.keys():
-            prob_map = (self.successes[i] + self.priors[0] - 1) / (self.trials[i] + self.priors[0] + self.priors[1] - 2)
+            prob_map = (self.successes[i] + self.priors[0]) / (self.trials[i] + self.priors[0] + self.priors[1])
             skill_levels_map[i] = prob_map - self.skill
         return skill_levels_map
 
@@ -197,6 +197,50 @@ class Beta_Binomial_Agent(Strategic_Skilled_Agent):
 
         # Use the skilled agent's algorithm for picking friend
         friend = super(Beta_Binomial_Agent, self).pick_friends(levels, cap, skill_levels=skill_levels_map)
+
+        if friend not in self.trials.keys():
+            self.trials[friend] = 1
+        else:
+            self.trials[friend] += 1
+
+        if friend not in self.successes.keys():
+            self.successes[friend] = 0
+
+        self.last_friend = friend
+        self.last_friend_level = levels[friend]
+        self.last_level = levels[self.id]
+
+        return friend
+
+class Gamma_Poisson_Agent(Strategic_Skilled_Agent):
+    def __init__(self, id, level, skill, priors=(1, 2)):
+        super(Gamma_Poisson_Agent, self).__init__(id, level)
+        self.skill = skill
+        self.trials = {}
+        self.successes = {}
+        self.last_friend = None
+        self.last_friend_level = None
+        self.last_level = level
+        self.priors = priors
+
+    def map_probs(self, num_players):
+        skill_levels_map = np.zeros(num_players)
+        for i in self.trials.keys():
+            r = self.priors[0] + self.successes[i]
+            p = 1 / (1 + self.priors[1] + self.trials[i])
+            prob_map = p * r / (1 - p)
+            skill_levels_map[i] = prob_map - self.skill
+        return skill_levels_map
+
+    def pick_friends(self, levels, cap, skill_levels=None):
+        if self.last_friend is not None and levels[self.last_friend] - self.last_friend_level > 0 and levels[self.id] - self.last_level > 0:
+            self.successes[self.last_friend] += 1
+
+        # Calculate the max a posteriori estimate for each other player
+        skill_levels_map = self.map_probs(len(levels))
+
+        # Use the skilled agent's algorithm for picking friend
+        friend = super(Gamma_Poisson_Agent, self).pick_friends(levels, cap, skill_levels=skill_levels_map)
 
         if friend not in self.trials.keys():
             self.trials[friend] = 1
