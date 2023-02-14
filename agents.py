@@ -255,3 +255,92 @@ class Gamma_Poisson_Agent(Strategic_Skilled_Agent):
         self.last_level = levels[self.id]
 
         return friend
+
+class Q_Agent(Agent):
+    def __init__(self, id, level, output_dim, epsilon=0.1, alpha=0.05, gamma=0.9):
+        super(Q_Agent, self).__init__(id, level)
+
+        self.last_state = None
+        self.last_action = None
+        self.last_reward = None
+        self.step = 0
+
+        self.actions = [i for i in range(output_dim)]
+        self.q = {}
+
+        self.epsilon = epsilon
+        self.alpha = alpha
+        self.gamma = gamma
+
+
+    def reset(self):
+        self.last_state = None
+        self.last_action = None
+        self.last_reward = None
+        self.step = 0
+
+    #----------------------------------------------------------------
+    # EVERYTHING BELOW IS Q-LEARNING
+
+    def getQ(self, state, action):
+        '''
+        Return the q-value at the (state, action) pair, or 0 if not found
+        '''
+        return self.q.get((state, action), 0.0)
+
+    def learnQ(self, state, action, reward, value):
+        '''
+        Given the latest reward as well as the newly calculated value, update the q-score to reflect this
+        '''
+        old_value = self.q.get((state, action), None)
+
+        # If old value is not found, then initialize it to the given reward
+        if old_value is None:
+            self.q[(state, action)] = reward
+        # Otherwise, calculate Q(s, a) += alpha * (reward(s,a) + max(Q(s') - Q(s,a))
+        else:
+            self.q[(state, action)] = old_value + self.alpha * (value - old_value)
+
+    def chooseAction(self, state):
+        '''
+        Choose an action based on the Epsilon-Greedy policy
+        '''
+
+        if np.random.random() < self.epsilon:
+            action = np.random.choice(self.actions)
+        else:
+            q_vals = [self.getQ(state, action) for action in self.actions]
+            max_q = max(q_vals)
+            actions = [i for i, x in enumerate(q_vals) if x == max_q]
+            action = np.random.choice(actions)
+        return action
+
+    def learn(self, p_state, p_action, reward, n_state):
+        '''
+        Calculate the max q-value for q-learning (on policy)
+        '''
+        q_new = max([self.getQ(n_state, action) for action in self.actions])
+        self.learnQ(p_state, p_action, reward, reward + self.gamma * q_new)
+
+    def pick_friends(self, levels, cap, skill_levels=None):
+        new_state = tuple(levels)
+        self.step += 1
+
+        new_action = self.chooseAction(new_state)
+
+        # If there is something to learn from (a last iteration), learn from it
+        if self.step > 1:
+            self.learn(self.last_state, self.last_action, self.last_reward, new_state)
+
+        # Update the new last action and state
+        self.last_action = new_action
+        self.last_state = new_state
+
+        return self.last_action
+
+    def accept_reward(self, reward, done=False, levels=None, cap=None):
+        if done:
+            self.learn(self.last_state, self.last_action, reward, (0))
+            self.reset()
+        else:
+            self.last_reward = reward

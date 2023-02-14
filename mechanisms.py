@@ -116,8 +116,8 @@ class Baseline_Mechanism(Mechanism):
     #     return new_levels
 
     def input_dim(self):
-        # The only dimensions required are levels of players and cap
-        return self.num_players + 1
+        # The only dimensions required are levels of players
+        return self.num_players
 
     def output_dim(self):
         # The only dimensions required are probabilities of selecting each player as the friend
@@ -168,8 +168,8 @@ class Skill_Mechanism(Mechanism):
     #     return new_levels
 
     def input_dim(self):
-        # Input now has to include the levels and skills of all players, along with max level cap
-        return self.num_players + len(self.skill_levels) + 1
+        # Input now has to include the levels and skills of all players
+        return self.num_players + len(self.skill_levels)
 
     def output_dim(self):
         # Output is still the probability of including each player in the kingship
@@ -224,8 +224,8 @@ class Sabotage_Mechanism(Mechanism):
     #     return levels
 
     def input_dim(self):
-        # Input now has to include the levels and skills of all players, along with max level cap
-        return self.num_players + len(self.skill_levels) + 1
+        # Input now has to include the levels and skills of all players
+        return self.num_players + len(self.skill_levels)
 
     def output_dim(self):
         # Output is still the probability of including each player in the kingship
